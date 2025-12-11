@@ -75,5 +75,10 @@ export const Content: Block = {
       },
       fields: columnFields,
     },
+    {
+      name: 'backgroundColor',
+      type: 'text',
+      label: 'Background Color (HEX)',
+    },
   ],
 }

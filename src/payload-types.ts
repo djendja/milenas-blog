@@ -445,6 +445,7 @@ export interface CallToActionBlock {
         id?: string | null;
       }[]
     | null;
+  backgroundColor?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'cta';
@@ -495,6 +496,7 @@ export interface ContentBlock {
         id?: string | null;
       }[]
     | null;
+  backgroundColor?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'content';
@@ -505,6 +507,7 @@ export interface ContentBlock {
  */
 export interface MediaBlock {
   media: string | Media;
+  backgroundColor?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'mediaBlock';
@@ -539,6 +542,8 @@ export interface ArchiveBlock {
         value: string | Post;
       }[]
     | null;
+  backgroundColor?: string | null;
+  postLayout?: ('4' | '2') | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'archive';
@@ -565,6 +570,7 @@ export interface FormBlock {
     };
     [k: string]: unknown;
   } | null;
+  backgroundColor?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'formBlock';
@@ -1070,6 +1076,7 @@ export interface CallToActionBlockSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  backgroundColor?: T;
   id?: T;
   blockName?: T;
 }
@@ -1096,6 +1103,7 @@ export interface ContentBlockSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  backgroundColor?: T;
   id?: T;
   blockName?: T;
 }
@@ -1105,6 +1113,7 @@ export interface ContentBlockSelect<T extends boolean = true> {
  */
 export interface MediaBlockSelect<T extends boolean = true> {
   media?: T;
+  backgroundColor?: T;
   id?: T;
   blockName?: T;
 }
@@ -1119,6 +1128,8 @@ export interface ArchiveBlockSelect<T extends boolean = true> {
   categories?: T;
   limit?: T;
   selectedDocs?: T;
+  backgroundColor?: T;
+  postLayout?: T;
   id?: T;
   blockName?: T;
 }
@@ -1130,6 +1141,7 @@ export interface FormBlockSelect<T extends boolean = true> {
   form?: T;
   enableIntro?: T;
   introContent?: T;
+  backgroundColor?: T;
   id?: T;
   blockName?: T;
 }

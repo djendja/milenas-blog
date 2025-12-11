@@ -17,6 +17,7 @@ export type FormBlockType = {
   enableIntro: boolean
   form: FormType
   introContent?: DefaultTypedEditorState
+  backgroundColor?: string
 }
 
 export const FormBlock: React.FC<

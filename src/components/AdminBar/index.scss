@@ -1,6 +1,7 @@
 @import '~@payloadcms/ui/scss';
 
 .admin-bar {
+  background-color: #797c9e;
   @include small-break {
     display: none;
   }

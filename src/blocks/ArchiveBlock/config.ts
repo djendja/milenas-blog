@@ -86,6 +86,21 @@ export const Archive: Block = {
       label: 'Selection',
       relationTo: ['posts'],
     },
+    {
+      name: 'backgroundColor',
+      type: 'text',
+      label: 'Background Color (HEX)',
+    },
+    {
+      name: 'postLayout',
+      type: 'select',
+      label: 'Post Layout',
+      options: [
+        { label: '4 Posts (Standard Grid)', value: '4' },
+        { label: '2 Posts (Large Cards)', value: '2' },
+      ],
+      defaultValue: 4,
+    },
   ],
   labels: {
     plural: 'Archives',

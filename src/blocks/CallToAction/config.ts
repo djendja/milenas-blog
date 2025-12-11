@@ -34,6 +34,11 @@ export const CallToAction: Block = {
         maxRows: 2,
       },
     }),
+    {
+      name: 'backgroundColor',
+      type: 'text',
+      label: 'Background Color (HEX)',
+    },
   ],
   labels: {
     plural: 'Calls to Action',

@@ -40,6 +40,11 @@ export const FormBlock: Block = {
       }),
       label: 'Intro Content',
     },
+    {
+      name: 'backgroundColor',
+      type: 'text',
+      label: 'Background Color (HEX)',
+    },
   ],
   graphQL: {
     singularName: 'FormBlock',
